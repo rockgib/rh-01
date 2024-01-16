@@ -53,6 +53,10 @@ html {
     font-family: sans-serif;
 }
 
+a {
+    cursor: pointer;
+}
+
 body {
     margin: 0 auto;
     width: 100%;
@@ -102,7 +106,7 @@ h2 {
     text-align: center;
     padding: 10px 0;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #7B5ADF;
 }
@@ -118,16 +122,23 @@ h2 {
 
 @media screen and (min-width: 636px) {
     .navLinks {
-        display: block;
+        display: flex;
         position: static;
         width: auto;
         background: none;
+
+        li {
+            list-style-image: none;
+            justify-content: flex-start;
+            flex-flow: row nowrap;
+            margin-right: 16px;
+        }
+
+        a {
+            padding: 10px;
+        }
     }
 
-    .navLinks a {
-        display: inline-block;
-        padding: 15px 20px;
-    }
 
     .hamburger {
         display: none;
