@@ -10,9 +10,18 @@ import Social from './Social.astro';
     }
 
     footer {
-        display: flex;
-        gap: 1rem;
         margin-top: 2rem;
+        padding: 40px 0;
+    }
+
+    .socialNetwork {
+      display: flex;
+        gap: 1rem;
+    }
+
+    .copyright {
+      padding: 1em 0;
+      margin-top: 1em;
     }
   </style>
   
@@ -20,5 +29,8 @@ import Social from './Social.astro';
   <div class="socialNetwork">
     <Social platform="facebook" username="rockheroltd" />
     <Social platform="instagram" username="rockheroltd" />
+  </div>
+  <div class="copyright">
+    <p>© Copyright © 2024 Rock Hero . All rights reserved.</p>
   </div>
 </footer>

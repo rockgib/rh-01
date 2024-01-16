@@ -147,7 +147,7 @@ a {
 body {
     margin: 0 auto;
     width: 100%;
-    max-width: 80ch;
+    max-width: 1200px;
     padding: 1rem;
     line-height: 1.4;
 }
@@ -272,6 +272,30 @@ h4 {
 
     .hamburger {
         display: none;
+    }
+
+    .billboard {
+        position: relative;
+        display: flex;
+    }
+
+    .billboardContent {
+        width: 50%;
+        padding-top: 3em;
+        padding-left: 3em;
+    }
+
+    .billboardImage {
+        min-height: 800px;
+    }
+
+    .billboardImageBg {
+        position: absolute;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        width: 100%;
     }
 
     .homeSection {
