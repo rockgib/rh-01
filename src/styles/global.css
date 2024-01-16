@@ -87,30 +87,29 @@ h2 {
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
-    background-color: #ff9776;
+    background-color: #7B5ADF;
 }
 
-.nav-links {
+.navLinks {
     width: 100%;
     top: 5rem;
-    background-color: #ff9776;
     display: none;
     margin: 0;
 }
 
-.nav-links a {
+.navLinks a {
     display: block;
     text-align: center;
     padding: 10px 0;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
-    text-transform: uppercase;
+    color: #7B5ADF;
 }
 
-.nav-links a:hover,
-.nav-links a:focus {
-    background-color: #ff9776;
+.navLinks a:hover,
+.navLinks a:focus {
+    color: #401FBB;
 }
 
 .expanded {
@@ -118,14 +117,14 @@ h2 {
 }
 
 @media screen and (min-width: 636px) {
-    .nav-links {
+    .navLinks {
         display: block;
         position: static;
         width: auto;
         background: none;
     }
 
-    .nav-links a {
+    .navLinks a {
         display: inline-block;
         padding: 15px 20px;
     }
@@ -152,9 +151,12 @@ h4 {
 
 .appDownloads {
     padding: 2em 0;
-    ul {
-    }
+
     li {
         padding: .4rem 0;
+    }
+
+    a {
+        color: #7B5ADF;
     }
 }
