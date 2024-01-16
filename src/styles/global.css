@@ -136,8 +136,11 @@ table {
 
 
 html {
-    background-color: #f1f5f9;
+    background-color: #281070;
     font-family: sans-serif;
+    background-image: url(images/circle-big.svg);
+    background-position: top -240px right -220px;
+    background-repeat: no-repeat;
 }
 
 a {
@@ -150,6 +153,7 @@ body {
     max-width: 1200px;
     padding: 1rem;
     line-height: 1.4;
+    color: #DCD5F6;
 }
 
 * {
@@ -195,7 +199,7 @@ h2 {
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
-    color: #7B5ADF;
+    color: #F8F7FD;
 }
 
 .navLinks a:hover,
@@ -208,7 +212,8 @@ h2 {
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 4.4rem;
+    color: #F8F7FD;
     font-weight: bold;
 }
 
@@ -222,7 +227,12 @@ h4 {
 }
 
 .appDownloads {
+    margin-top: 4em;
     padding: 2em 0;
+
+    h4 {
+        font-size: 1rem;
+    }
 
     li {
         padding: .4rem 0;
@@ -251,6 +261,23 @@ h4 {
 }
 
 @media only screen and (min-width: 760px) {
+
+    header {
+        &.siteHeader {
+            display: flex;
+            align-items: center;
+
+            .brandLogo {
+                width: 160px;
+            }
+
+            nav {
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+            }
+        }
+    }
 
     .navLinks {
         display: flex;
@@ -281,12 +308,8 @@ h4 {
 
     .billboardContent {
         width: 50%;
-        padding-top: 3em;
-        padding-left: 3em;
-    }
-
-    .billboardImage {
-        min-height: 800px;
+        padding-top: 4em;
+        padding-left: 4em;
     }
 
     .billboardImageBg {
